@@ -1,4 +1,8 @@
 return {
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
+  },
   -- messages, cmdline and the popupmenu
   {
     "folke/noice.nvim",
@@ -61,15 +65,15 @@ return {
   },
 
   -- animations
-  {
-    "echasnovski/mini.animate",
-    event = "VeryLazy",
-    opts = function(_, opts)
-      opts.scroll = {
-        enable = false,
-      }
-    end,
-  },
+  -- {
+  --   "echasnovski/mini.animate",
+  --   event = "VeryLazy",
+  --   opts = function(_, opts)
+  --     opts.scroll = {
+  --       enable = false,
+  --     }
+  --   end,
+  -- },
 
   -- buffer line
   -- {
