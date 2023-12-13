@@ -20,14 +20,15 @@ return {
   {
     "neovim/nvim-lspconfig",
     opts = {
-      vim.diagnostic.config({
+      diagnostics = {
+        underline = true,
         virtual_text = false,
         severity_sort = true,
         float = {
           border = "rounded",
           source = "always",
         },
-      }),
+      },
       inlay_hints = { enabled = true },
       ---@type lspconfig.options
       servers = {
