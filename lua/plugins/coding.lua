@@ -21,6 +21,11 @@ return {
       local luasnip = require("luasnip")
       local cmp = require("cmp")
 
+      opts.window = {
+        documentation = cmp.config.window.bordered(),
+        completion = cmp.config.window.bordered(),
+      }
+
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
           if cmp.visible() then
