@@ -1,0 +1,7 @@
+{
+  "useHook": {
+    "prefix": "uh",
+    "body": ["export function $TM_FILENAME_BASE() {", "  $1", "}"],
+    "description": "create a react hook function"
+  }
+}

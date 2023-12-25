@@ -9,7 +9,7 @@ return {
       config = function()
         require("luasnip.loaders.from_vscode").lazy_load()
         local customSnipPath = vim.fn.stdpath("config") .. "/lua/plugins/snippets"
-        require("luasnip.loaders.from_lua").lazy_load({ paths = { customSnipPath } })
+        require("luasnip.loaders.from_vscode").lazy_load({ paths = { customSnipPath } })
       end,
     },
   },
