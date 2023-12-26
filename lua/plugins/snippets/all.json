@@ -1,4 +1,19 @@
 {
+  "fix": {
+    "prefix": "fix",
+    "body": ["$LINE_COMMENT FIX: $0"],
+    "description": "create a FIX comment"
+  },
+  "note": {
+    "prefix": "note",
+    "body": ["$LINE_COMMENT NOTE: $0"],
+    "description": "create a NOTE comment"
+  },
+  "todo": {
+    "prefix": "todo",
+    "body": ["$LINE_COMMENT TODO: $0"],
+    "description": "create a TODO comment"
+  },
   "useHook": {
     "prefix": "ruh",
     "body": ["export function $TM_FILENAME_BASE() {", "  $0", "}"],
