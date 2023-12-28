@@ -1,4 +1,9 @@
 {
+  "useIntl": {
+    "prefix": "useIntl",
+    "body": ["const intl = useIntl();"],
+    "description": "useIntl shortcut"
+  },
   "fix": {
     "prefix": "fix",
     "body": ["$LINE_COMMENT FIX: $0"],
