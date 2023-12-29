@@ -1,6 +1,6 @@
 {
   "useIntl": {
-    "prefix": "useIntl",
+    "prefix": "intl",
     "body": ["const intl = useIntl();"],
     "description": "useIntl shortcut"
   },
