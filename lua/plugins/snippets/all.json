@@ -1,8 +1,13 @@
 {
   "useIntl": {
-    "prefix": "intl",
+    "prefix": "useIntl",
     "body": ["const intl = useIntl();"],
     "description": "useIntl shortcut"
+  },
+  "formatMessage": {
+    "prefix": "fmtMsg",
+    "body": ["intl.formatMessage({ id: '${0:messageId}' })"],
+    "description": "useIntl formatMessage shortcut"
   },
   "fix": {
     "prefix": "fix",
