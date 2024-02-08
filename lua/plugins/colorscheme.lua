@@ -11,6 +11,7 @@ return {
           dark = "mocha",
         },
         color_overrides = {},
+        transparent_background = true,
         dim_inactive = {
           enabled = true,
           shade = "dark",
