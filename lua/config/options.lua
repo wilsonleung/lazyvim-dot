@@ -8,10 +8,12 @@ vim.scriptencoding = "utf-8"
 vim.opt.encoding = "utf-8"
 vim.opt.fileencoding = "utf-8"
 
--- relative line number
-vim.opt.rnu = true
--- normal line number
--- vim.opt.number = true
+vim.opt.rnu = true -- relative line number
+vim.opt.number = true -- normal line number
+
+vim.opt.termguicolors = true
+vim.opt.background = "dark"
+vim.opt.signcolumn = "yes"
 
 vim.opt.title = true
 vim.opt.autoindent = true
@@ -26,6 +28,7 @@ vim.opt.scrolloff = 10
 vim.opt.backupskip = { "/tmp/*", "/private/tmp/*" }
 vim.opt.inccommand = "split"
 vim.opt.ignorecase = true -- Case insensitive searching UNLESS /C or capital in search
+vim.opt.smartcase = true -- Case insensitive searching UNLESS /C or capital in search
 vim.opt.smarttab = true
 vim.opt.breakindent = true
 vim.opt.shiftwidth = 2
