@@ -64,6 +64,31 @@ return {
       background_color = "#000000",
     },
   },
+  -- statusline
+  {
+    "nvim-lualine/lualine.nvim",
+    opts = function(_, opts)
+      table.insert(opts.sections.lualine_c, {
+        function()
+          return require("nvim-navic").get_location()
+        end,
+        cond = function()
+          return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
+        end,
+      })
+
+      local lazy_status = require("lazy.status")
+      table.insert(opts.sections.lualine_x, {
+        function()
+          return lazy_status.updates()
+        end,
+        cond = function()
+          return lazy_status.has_updates()
+        end,
+        color = { fg = "#ff9e64" },
+      })
+    end,
+  },
 
   -- animations
   -- {
@@ -93,19 +118,7 @@ return {
   --     },
   --   },
   -- },
-
-  -- statusline
-  -- {
-  --   "nvim-lualine/lualine.nvim",
-  --   event = "VeryLazy",
-  --   opts = {
-  --     options = {
-  --       -- globalstatus = false,
-  --       theme = "solarized_dark",
-  --     },
-  --   },
-  -- },
-
+  --
   -- filename
   -- {
   --   "b0o/incline.nvim",
