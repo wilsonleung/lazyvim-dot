@@ -65,30 +65,30 @@ return {
     },
   },
   -- statusline
-  {
-    "nvim-lualine/lualine.nvim",
-    opts = function(_, opts)
-      table.insert(opts.sections.lualine_c, {
-        function()
-          return require("nvim-navic").get_location()
-        end,
-        cond = function()
-          return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
-        end,
-      })
-
-      local lazy_status = require("lazy.status")
-      table.insert(opts.sections.lualine_x, {
-        function()
-          return lazy_status.updates()
-        end,
-        cond = function()
-          return lazy_status.has_updates()
-        end,
-        color = { fg = "#ff9e64" },
-      })
-    end,
-  },
+  -- {
+  --   "nvim-lualine/lualine.nvim",
+  --   opts = function(_, opts)
+  --     table.insert(opts.sections.lualine_c, {
+  --       function()
+  --         return require("nvim-navic").get_location()
+  --       end,
+  --       cond = function()
+  --         return package.loaded["nvim-navic"] and require("nvim-navic").is_available()
+  --       end,
+  --     })
+  --
+  --     local lazy_status = require("lazy.status")
+  --     table.insert(opts.sections.lualine_x, {
+  --       function()
+  --         return lazy_status.updates()
+  --       end,
+  --       cond = function()
+  --         return lazy_status.has_updates()
+  --       end,
+  --       color = { fg = "#ff9e64" },
+  --     })
+  --   end,
+  -- },
 
   -- animations
   -- {
