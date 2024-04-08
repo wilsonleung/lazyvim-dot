@@ -8,8 +8,8 @@ return {
       return {
         defaults = {
           path_display = { "smart" },
-          -- layout_strategy = "center",
-          -- layout_config = { preview_cutoff = 40, prompt_position = "bottom", width = 0.9, height = 0.5 },
+          layout_strategy = "vertical",
+          layout_config = { prompt_position = "bottom" },
           sorting_strategy = "ascending",
           winblend = 0,
           mappings = {
