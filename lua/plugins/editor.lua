@@ -9,7 +9,7 @@ return {
         defaults = {
           path_display = { "smart" },
           layout_strategy = "vertical",
-          layout_config = { prompt_position = "bottom" },
+          layout_config = { prompt_position = "bottom", preview_cutoff = 20 },
           sorting_strategy = "ascending",
           winblend = 0,
           mappings = {
