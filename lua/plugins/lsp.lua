@@ -10,7 +10,7 @@ return {
         "shellcheck",
         "shfmt",
         "tailwindcss-language-server",
-        "typescript-language-server",
+        -- "typescript-language-server",
         "css-lsp",
         "elixir-ls",
       })
@@ -39,7 +39,7 @@ return {
             return require("lspconfig.util").root_pattern(".git")(...)
           end,
         },
-        tsserver = {
+        ts_ls = {
           root_dir = function(...)
             return require("lspconfig.util").root_pattern(".git")(...)
           end,
