@@ -2,50 +2,18 @@ return {
   "snacks.nvim",
   opts = {
     picker = {
-      enabled = true,
-      sources = {
-        explorer = {
-          preview = false,
-          layout = {
-            preview = "main",
-            layout = {
-              backdrop = false,
-              width = 40,
-              min_width = 40,
-              height = 0,
-              position = "left",
-              border = "none",
-              box = "vertical",
-              {
-                win = "input",
-                height = 1,
-                border = "rounded",
-                title = "{title} {live} {flags}",
-                title_pos = "center",
-              },
-              { win = "list", border = "none" },
-              { win = "preview", title = "{preview}", height = 0.4, border = "top" },
-            },
-          },
+      layout = {
+        preset = "vertical",
+        layout = {
+          width = 0.8,
         },
       },
-      layout = {
-        layout = {
-          backdrop = false,
-          row = 1,
-          width = 0.9,
-          min_width = 0.9,
-          height = 0.9,
-          border = "none",
-          box = "vertical",
-          { win = "preview", title = "{preview}", height = 0.7, border = "rounded" },
-          {
-            box = "vertical",
-            border = "rounded",
-            title = "{title} {live} {flags}",
-            title_pos = "center",
-            { win = "input", height = 1, border = "bottom" },
-            { win = "list", border = "none" },
+      sources = {
+        explorer = {
+          layout = {
+            layout = {
+              width = 0.35,
+            },
           },
         },
       },
