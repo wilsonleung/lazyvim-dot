@@ -4,6 +4,9 @@ return {
     cli = {
       win = {
         layout = "bottom",
+        split = {
+          height = 0.5,
+        },
       },
     },
   },
