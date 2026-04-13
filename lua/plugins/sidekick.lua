@@ -1,5 +1,12 @@
 return {
   "folke/sidekick.nvim",
+  opts = {
+    cli = {
+      win = {
+        layout = "bottom",
+      },
+    },
+  },
   keys = {
     {
       "<leader>ai",
